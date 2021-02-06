@@ -1,3 +1,4 @@
+//Animation entête
 .animation div {
 
     animation : anim-entete 1s both cubic-bezier(.43,1.06,.41,1.06);
@@ -7,6 +8,22 @@
     0% {transform : translateX(500px);}
     100% {transform : translateX(0px);}
 }
+
+//Animation principal
+.principal h3 {
+    animation : anim-principal 2s both cubic-bezier(.16,.29,.68,1.24);
+}
+
+@keyframes anim-principal {
+    0% {transform : translateY(-900px);
+        color: wheat;}
+    25% {color: white;}
+    50% {color: skyblue;}
+    75% {color: white;}
+    100% {transform : translateY(0px);
+        color: wheat;}
+}
+
 
 /* .animation div:nth-of-type(1) {
     animation-delay: .5s;
@@ -24,10 +41,20 @@
     animation-delay: 2.5s;
 } */
 
+//Animation entête
 $columns: 5;
 
 @for $i from 1 through $columns {
     .animation div:nth-of-type(#{$i}) {
+        animation-delay: $i#{s};        //# pour coller le s
+    }
+}
+
+//Animation principal
+$columns: 3;
+
+@for $i from 1 through $columns {
+    .principal h3:nth-of-type(#{$i}) {
         animation-delay: $i#{s};        //# pour coller le s
     }
 }
