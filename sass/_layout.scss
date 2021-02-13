@@ -112,7 +112,7 @@ p {
             justify-content: center;
             width: 50px;
             height: 50px;
-            margin: 5px;
+            margin: 20px;
             border-radius: 50%;
             background-color: rgb(65, 113, 243);
         }
@@ -135,10 +135,12 @@ p {
     }
 
 .principal{
-    display : grid;
-    place-items: center;
-    padding: 15%;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h3{
+        padding: 1.3rem 0 1.3rem 0;
         text-align: center;
     }
 }

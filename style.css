@@ -14,9 +14,14 @@ animation
 @keyframes anim-entete {
   0% {
     transform: translateX(500px);
+    opacity: 0%;
+  }
+  25% {
+    opacity: 0%;
   }
   100% {
     transform: translateX(0px);
+    opacity: 100%;
   }
 }
 
@@ -28,19 +33,23 @@ animation
   0% {
     transform: translateY(-900px);
     color: wheat;
+    font-size: 2rem;
   }
   25% {
     color: white;
+    font-size: 1rem;
   }
   50% {
     color: skyblue;
   }
   75% {
     color: white;
+    font-size: 3rem;
   }
   100% {
     transform: translateY(0px);
     color: wheat;
+    font-size: 2rem;
   }
 }
 
@@ -89,6 +98,14 @@ animation
 
 .principal h3:nth-of-type(3) {
   animation-delay: 3s;
+}
+
+.principal h3:nth-of-type(4) {
+  animation-delay: 4s;
+}
+
+.principal h3:nth-of-type(5) {
+  animation-delay: 5s;
 }
 
 /* ---------------------------------------
@@ -221,7 +238,7 @@ p {
   justify-content: center;
   width: 50px;
   height: 50px;
-  margin: 5px;
+  margin: 20px;
   border-radius: 50%;
   background-color: #4171f3;
 }
@@ -243,12 +260,14 @@ p {
 }
 
 .principal {
-  display: grid;
-  place-items: center;
-  padding: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .principal h3 {
+  padding: 1.3rem 0 1.3rem 0;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
