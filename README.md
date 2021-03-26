@@ -2,5 +2,5 @@
 
 Exercice 1
 
-https://github.com/Alibotella/labo2
-https://alibotella.github.io/labo2/
+https://github.com/alicebotella/labo2
+https://alicebotella.github.io/labo2/
